@@ -66,7 +66,7 @@ def upload_file():
     uploaded_file = request.files['file']
     
     # Save the file to the uploads directory
-    uploads_dir = os.path.join(get_script_directory(), 'uploads')
+    uploads_dir = os.path.join(get_script_directory())
     if not os.path.exists(uploads_dir):
         os.makedirs(uploads_dir)
     
